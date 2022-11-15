@@ -1,0 +1,1064 @@
+{%load static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="StudyPress | Education & Courses HTML Template" />
+<meta name="keywords" content="academy, course, education, education html theme, elearning, learning," />
+<meta name="author" content="ThemeMascot" />
+
+<!-- Page Title -->
+<title>{{setting.description}}</title>
+<link rel="shortcut icon" href="{{setting.logo.url}}" type="image/x-icon">
+<!-- Favicon and Touch Icons -->
+<link href="{% static 'images/favicon.png' %}' %}" rel="shortcut icon" type="image/png' %}">
+<link href="{% static 'images/apple-touch-icon.png' %}' %}" rel="apple-touch-icon">
+<link href="{% static 'images/apple-touch-icon-72x72.png' %}' %}" rel="apple-touch-icon" sizes="72x72">
+<link href="{% static 'images/apple-touch-icon-114x114.png' %}' %}" rel="apple-touch-icon" sizes="114x114">
+<link href="{% static 'images/apple-touch-icon-144x144.png' %}' %}" rel="apple-touch-icon" sizes="144x144">
+
+<!-- Stylesheet -->
+<link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/jquery-ui.min.css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/animate.css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/css-plugin-collections.css'%}" rel="stylesheet"/>
+<!-- CSS | menuzord megamenu skins -->
+<link id="menuzord-menu-skins" href="{% static 'css/menuzord-skins/menuzord-rounded-boxed.css'%}" rel="stylesheet"/>
+<!-- CSS | Main style file -->
+<link href="{% static 'css/style-main.css'%}" rel="stylesheet" type="text/css">
+<!-- CSS | Preloader Styles -->
+<link href="{% static 'css/preloader.css'%}" rel="stylesheet" type="text/css">
+<!-- CSS | Custom Margin Padding Collection -->
+<link href="{% static 'css/custom-bootstrap-margin-padding.css'%}" rel="stylesheet" type="text/css">
+<!-- CSS | Responsive media queries -->
+<link href="{% static 'css/responsive.css'%}" rel="stylesheet" type="text/css">
+<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
+<!-- Revolution Slider 5.x CSS settings -->
+<link  href="{% static 'js/revolution-slider/css/settings.css'%}" rel="stylesheet" type="text/css"/>
+<link  href="{% static 'js/revolution-slider/css/layers.css'%}" rel="stylesheet" type="text/css"/>
+<link  href="{% static 'js/revolution-slider/css/navigation.css'%}" rel="stylesheet" type="text/css"/>
+
+<!-- CSS | Theme Color -->
+<link href="{% static 'css/colors/theme-skin-color-set-1.css'" rel="stylesheet" type="text/css">
+
+<!-- external javascripts -->
+<script src="{% static 'js/jquery-2.2.4.min.js'%}"></script>
+<script src="{% static 'js/jquery-ui.min.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<!-- JS | jquery plugin collection for this theme -->
+<script src="{% static 'js/jquery-plugin-collection.js'%}"></script>
+
+<!-- Revolution Slider 5.x SCRIPTS -->
+<script src="{% static 'js/revolution-slider/js/jquery.themepunch.tools.min.js'%}"></script>
+<script src="{% static 'js/revolution-slider/js/jquery.themepunch.revolution.min.js'%}"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="our_color">
+<div id="wrapper" class="clearfix">
+  <!-- preloader -->
+  <div id="preloader">
+    <div id="spinner">
+      <div class="preloader-dot-loading">
+        <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <div id="disable-preloader" class="btn btn-default btn-sm">Предосмотр......</div>
+  </div> 
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header-top bg-theme-color-2 sm-text-center p-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="widget no-border m-0">
+              <ul class="list-inline font-13 sm-text-center mt-5">
+                <li>
+                  <a class="text-white" href="#">FAQ</a>
+                </li>
+                <li class="text-white">|</li>
+                <li>
+                  <a class="text-white" href="#">Help Desk</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="widget dark">
+              <ul class="styled-icons icon-bordered icon-sm" style="display:flex; justify-content: end;">
+                <li><a href="https://www.facebook.com/skillboxru/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/Skillbox_ru"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC2FJq-Rr7v4SlKAoM7x0ZhA"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://instagram.com/skillbox.ru?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://pin.it/1HwmEw7"><i class="fa fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-middle p-0 bg-lightest xs-text-center">
+      <div class="container pt-0 pb-0">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-5">
+            <div class="widget no-border m-0">
+             
+              <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="javascript:void(0)"><img   src="{{ setting.logo.url }}" alt="{{ setting.title }}"></a>
+              
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
+              <ul class="list-inline">
+                <li><i class="fa fa-phone-square text-theme-colored font-36 mt-5 sm-display-block"></i></li>
+                <li>
+                  <a href="#" class="font-12 text-gray text-uppercase">Позвоните нам сегодня!</a>
+                  <h5 class="font-14 m-0"> +996777777777</h5>
+                </li>
+              </ul>
+            </div>
+          </div>  
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
+              <ul class="list-inline">
+                <li><i class="fa fa-clock-o text-theme-colored font-36 mt-5 sm-display-block"></i></li>
+                <li>
+                  <a href="#" class="font-12 text-gray text-uppercase">Мы открыты!</a>
+                  <h5 class="font-13 text-black m-0"> Понедельник- пятница 9:00-11:00</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="header-nav-wrapper navbar-scrolltofixed bg-theme-colored border-bottom-theme-color-2-1px">
+        <div class="container">
+          <nav id="menuzord" class="menuzord bg-theme-colored pull-left flip menuzord-responsive">
+            <ul class="menuzord-menu">
+              <li class="active"><a href="{% url 'index'%}">Домой</a>
+              </li>
+              <li><a href="#">Категории <span class="label label-info"></span></a>
+                <ul class="dropdown">
+                  {% for category in categories %}
+                  <li><a href="{%url 'category_detail' category.slug%}">{{category.title}}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li><a href="{% url 'news_index'  %}">Новости</a>
+              </li>
+              <li><a href="{% url 'contact' %}">Контакты</a>
+              </li>
+              {% if request.user.is_authenticated and request.user == user%}
+              <li><a href="{% url 'account' request.user.username %}">{{request.user.username}}</a></li>
+              <li><a href="{% url 'logout' %}">Выйти</a></li>
+              {% else %}
+              <li><a href="{% url 'register' %}" class="sub-menu-item">Зарегистрироваться</a></li>
+              <li><a href="{% url 'user_login' %}" class="sub-menu-item">Войти</a></li>
+              {% endif %}
+                </ul>
+            </ul>
+            <div id="top-search-bar" class="collapse">
+              <div class="container">
+                <form role="search" action="#" class="search_form_top" method="get">
+                  <input type="text" placeholder="Type text and press Enter..." name="s" class="form-control" autocomplete="off">
+                  <span class="search-close"><i class="fa fa-search"></i></span>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Start main-content -->
+  <div class="main-content"> 
+   
+    <!-- Section: home -->
+    <section id="home">
+      <div class="container-fluid p-0">
+        
+        <!-- Slider Revolution Start -->
+        <div class="rev_slider_wrapper">
+          <div class="rev_slider" data-version="5.0">
+            <ul>
+
+              <!-- SLIDE 1 -->
+              <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{% static 'images/bg/bg3.jpg' %}" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="{% static 'images/bg/bg3.jpg' %}"  alt=""  data-bgposition="center 10%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                  id="rs-1-layer-1"
+
+                  data-x="['left']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['-110']" 
+                  data-fontsize="['100']"
+                  data-lineheight="['110']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:700;">Знаниe.
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent border-left-theme-color-2-6px pl-20 pr-20"
+                  id="rs-1-layer-2"
+
+                  data-x="['left']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['-25']" 
+                  data-fontsize="['35']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;">Знание для каждого
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-white" 
+                  id="rs-1-layer-3"
+
+                  data-x="['left']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['35']"
+                  data-fontsize="['16']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">Мы всегда предоставляем наши лучшие услуги для наших клиентов и<br> всегда стараемся добиться доверия и удовлетворения наших клиентов.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+              </li>
+
+              <!-- SLIDE 2 -->
+              <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{% static 'images/bg/bg2.jpg' %}" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="{% static 'images/bg/bg2.jpg' %}"  alt=""  data-bgposition="center 40%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-uppercase  bg-dark-transparent-5 text-white font-raleway border-left-theme-color-2-6px border-right-theme-color-2-6px pl-30 pr-30"
+                  id="rs-2-layer-1"
+                
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['-90']" 
+                  data-fontsize="['28']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:400; border-radius: 30px;">Поделитесь своими знаниями!
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase bg-theme-colored-transparent text-white font-raleway pl-30 pr-30"
+                  id="rs-2-layer-2"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['-20']"
+                  data-fontsize="['48']"
+                  data-lineheight="['70']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:700; border-radius: 30px;"> Лучшие университеты мира.
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-white text-center" 
+                  id="rs-2-layer-3"
+
+                  data-x="['center']"
+                  data-hoffset="['0']"
+                  data-y="['middle']"
+                  data-voffset="['50']"
+                  data-fontsize="['16']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">Мы всегда предоставляем наши лучшие услуги для наших клиентов и<br> всегда стараемся добиться доверия и удовлетворения наших клиентов.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+              </li>
+
+              <!-- SLIDE 3 -->
+              <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{% static 'images/bg/bg4.jpg' %}" data-rotate="0" data-saveperformance="off" data-title="Slide 3" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="{% static 'images/bg/bg4.jpg' %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent border-right-theme-color-2-6px pr-20 pl-20"
+                  id="rs-3-layer-1"
+
+                  data-x="['right']"
+                  data-hoffset="['30']"
+                  data-y="['middle']"
+                  data-voffset="['-90']" 
+                  data-fontsize="['64']"
+                  data-lineheight="['72']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;">Лучшее образование.
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption tp-resizeme text-uppercase bg-dark-transparent-6 text-white font-raleway pl-20 pr-20"
+                  id="rs-3-layer-2"
+
+                  data-x="['right']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['-25']" 
+                  data-fontsize="['32']"
+                  data-lineheight="['54']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 7; white-space: nowrap; font-weight:600;">Для вашего лучшего будущего.
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme text-white text-right" 
+                  id="rs-3-layer-3"
+
+                  data-x="['right']"
+                  data-hoffset="['35']"
+                  data-y="['middle']"
+                  data-voffset="['30']"
+                  data-fontsize="['16']"
+                  data-lineheight="['28']"
+                  data-width="none"
+                  data-height="none"
+                  data-whitespace="nowrap"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1400" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-responsive_offset="on"
+                  style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400;">Мы всегда предоставляем наши лучшие услуги для наших клиентов и<br> всегда стараемся добиться доверия и удовлетворения наших клиентов.
+                </div>
+
+                <!-- LAYER NR. 4 -->
+              </li>
+
+            </ul>
+          </div>
+          <!-- end .rev_slider -->
+        </div>
+        <!-- end .rev_slider_wrapper -->
+        <script>
+          $(document).ready(function(e) {
+            $(".rev_slider").revolution({
+              sliderType:"standard",
+              sliderLayout: "auto",
+              dottedOverlay: "none",
+              delay: 5000,
+              navigation: {
+                  keyboardNavigation: "off",
+                  keyboard_direction: "horizontal",
+                  mouseScrollNavigation: "off",
+                  onHoverStop: "off",
+                  touch: {
+                      touchenabled: "on",
+                      swipe_threshold: 75,
+                      swipe_min_touches: 1,
+                      swipe_direction: "horizontal",
+                      drag_block_vertical: false
+                  },
+                arrows: {
+                  style:"zeus",
+                  enable:true,
+                  hide_onmobile:true,
+                  hide_under:600,
+                  hide_onleave:true,
+                  hide_delay:200,
+                  hide_delay_mobile:1200,
+                  tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                  left: {
+                    h_align:"left",
+                    v_align:"center",
+                    h_offset:30,
+                    v_offset:0
+                  },
+                  right: {
+                    h_align:"right",
+                    v_align:"center",
+                    h_offset:30,
+                    v_offset:0
+                  }
+                },
+                bullets: {
+                  enable:true,
+                  hide_onmobile:true,
+                  hide_under:600,
+                  style:"metis",
+                  hide_onleave:true,
+                  hide_delay:200,
+                  hide_delay_mobile:1200,
+                  direction:"horizontal",
+                  h_align:"center",
+                  v_align:"bottom",
+                  h_offset:0,
+                  v_offset:30,
+                  space:5,
+                  tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
+                }
+              },
+              responsiveLevels: [1240, 1024, 778],
+              visibilityLevels: [1240, 1024, 778],
+              gridwidth: [1170, 1024, 778, 480],
+              gridheight: [650, 768, 960, 720],
+              lazyType: "none",
+              parallax: {
+                  origo: "slidercenter",
+                  speed: 1000,
+                  levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
+                  type: "scroll"
+              },
+              shadow: 0,
+              spinner: "off",
+              stopLoop: "on",
+              stopAfterLoops: 0,
+              stopAtSlide: -1,
+              shuffle: "off",
+              autoHeight: "off",
+              fullScreenAutoWidth: "off",
+              fullScreenAlignForce: "off",
+              fullScreenOffsetContainer: "",
+              fullScreenOffset: "0",
+              hideThumbsOnMobile: "off",
+              hideSliderAtLimit: 0,
+              hideCaptionAtLimit: 0,
+              hideAllCaptionAtLilmit: 0,
+              debugMode: false,
+              fallbacks: {
+                  simplifyAll: "off",
+                  nextSlideOnWindowFocus: "off",
+                  disableFocusListener: false,
+              }
+            });
+          });
+        </script>
+        <!-- Slider Revolution Ends -->
+
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section class="">
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="letter-space-4 text-gray-darkgray text-uppercase mt-0 mb-0"></h6>
+              <h2 class="text-uppercase font-weight-600 mt-0 font-28 line-bottom">{{settings.title}}</h2>
+              <h4 class="text-theme-colored">{{settings.description}}</p>
+              <a class="btn btn-theme-colored btn-flat btn-lg mt-10 mb-sm-30" href="#"></a>
+            </div>
+            <div class="col-md-6">
+              <div class="video-popup">                
+                <a href="https://youtu.be/Q0KL76IK4_0" data-lightbox-gallery="youtube-video" title="Video">
+                  <img alt="" src="{% static 'images/about/5.jpg' %}" class="img-responsive img-fullwidth">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: COURSES -->
+    <section class="bg-lighter">
+      <div class="container pb-60">
+        <div class="section-title mb-10">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="mt-0 text-uppercase font-28 line-bottom line-height-1">Наши курсы.</h2>
+         </div>
+        </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel-4col" data-dots="true">
+                {% for course in courses %}
+                <div class="item ">
+                  <div class="service-block bg-white">
+                    <div class="thumb"> <img alt="featured project" src="{{course.image.url}}" class="img-fullwidth">
+                    <h4 class="text-white mt-0 mb-0"><span class="price">{{course.price}}   {{course.currency}} </span></h4>
+                    </div>
+                    <div class="content text-left flip p-25 pt-0">
+                      <h4 class="line-bottom mb-10">{{course.title}}</h4>
+                      <p>{{course.description|truncatewords:20}}</p>
+                     <a class="btn btn-dark btn-theme-colored btn-sm text-uppercase mt-10" href="{% url  'courses_detail' course.id %}">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                {% endfor%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Funfact -->
+    <!-- Section: Gallery -->
+    <section id="gallery" class="bg-lighter">
+     <div class="container">
+        <div class="section-title mb-10">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="mt-0 text-uppercase text-theme-colored title line-bottom line-height-1">НАША<span class="text-theme-color-2 font-weight-400"> ГАЛЕРЕЯ</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Works Filter -->
+              <div class="portfolio-filter font-alt align-center">
+                <a href="#" class="active" data-filter="*">Всё</a>
+                <a href="#select1" class="" data-filter=".select1">Фото</a>
+                <a href="#select2" class="" data-filter=".select2">Университет</a>
+                <a href="#select3" class="" data-filter=".select3">Студенты</a>
+              </div>
+              <!-- End Works Filter -->
+              
+              <!-- Portfolio Gallery Grid -->
+              <div id="grid" class="gallery-isotope grid-4 gutter clearfix">
+               
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s1.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/1.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/1.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s2.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/2.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/2.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select2">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s3.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/3.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/3.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select3">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s4.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/4.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/4.jpg' %}">VПосмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s5.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/5.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/5.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select3">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s6.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/6.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/6.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select2">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s7.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/7.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/7.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select3">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s8.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/8.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/8.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s9.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/9.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/9.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select2">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s10.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/10.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/10.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select1">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s11.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/11.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/11.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item select3">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'images/gallery/s12.jpg' %}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'images/gallery/12.jpg' %}"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'images/gallery/12.jpg' %}">Посмотреть больше</a>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                
+              </div>
+              <!-- End Portfolio Gallery Grid -->
+            </div>
+          </div>
+        </div>
+      </div >
+    </section>
+
+    <!-- Section: Why Choose Us -->
+    <!-- Divider: testimonials -->
+
+    <!-- Section: blog -->
+    <section id="blog" class="bg-lighter">
+      
+      <div class="container">
+        <div class="section-title mb-10">
+          <div class="row">
+            <div class="col-md-8">
+              <h2 class="mt-0 text-uppercase font-28 line-bottom line-height-1">Последние <span class="text-theme-color-2 font-weight-400">Новости</span></h2>
+           </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            {%for new in news%}
+            <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+              <article class="post clearfix mb-sm-30">
+                <div class="entry-header">
+                  <div class="post-thumb thumb"> 
+                    <img src="{{new.image.url }}" alt="" class="img-responsive img-fullwidth"> 
+                  </div>
+                </div>
+                <div class="entry-content p-20 pr-10 bg-white">
+                  <div class="entry-meta media mt-0 no-bg no-border">
+                    <div class="entry-date media-left text-center flip bg-theme-colored pt-5 pr-15 pb-5 pl-15">
+                      <ul>
+                        <li class="font-12 text-white text-uppercase">{{ new.created}}</li>
+                      </ul>
+                    </div>
+                    <div class="media-body pl-15">
+                      <div class="event-content pull-left flip">
+                        <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">{{new.title}}</a></h4>                      
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-10">{{new.description|truncatewords:20}}</p>
+                  <a href="{% url 'news_detail' new.id   %}" class="btn-read-more">Читать далее</a>
+                  <div class="clearfix"></div>
+                </div>
+              </article>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Clients -->
+    <section class="clients bg-theme-color-2">
+      <div class="container pt-10 pb-0">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Section: Clients -->
+            <div class="owl-carousel-6col clients-logo transparent text-center owl-nav-top">
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w1.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w2.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w3.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w4.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w5.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w6.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w3.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w4.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w5.png' %}" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="{% static 'images/clients/w6.png' %}" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- end main-content -->
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="{% static 'images/bg/bg2.jpg' %}">
+    <div class="container">
+      <div class="row border-bottom">
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <img class="mt-5 mb-20" alt="" src="{{ settings.logo.url }}">
+            <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+            <ul class="list-inline mt-5">
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-color-2 mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-color-2 mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-color-2 mr-5"></i> <a class="text-gray" href="#">www.yourdomain.com</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h4 class="widget-title">Полезные ссылки</h4>
+            <ul class="list angle-double-right list-border">
+              <li><a href="{%url 'contact'%}">О нас</a></li>          
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h4 class="widget-title line-bottom-theme-colored-2">Часы работы</h4>
+            <div class="opening-hours">
+              <ul class="list-border">
+                <li class="clearfix"> <span> Понедельник - вторник:  </span>
+                  <div class="value pull-right"> 9:00 - 11:00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Среда - Четверг:</span>
+                  <div class="value pull-right"> 9:00 - 11:00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Пятница: </span>
+                  <div class="value pull-right"> 9:00 - 10:00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Суббота - Воскресенье: </span>
+                  <div class="value pull-right"> Закрыто </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-30">
+        <div class="col-md-2">
+          <div class="widget dark">
+            <h5 class="widget-title mb-10">Позвоните нам сейчас!</h5>
+            <div class="text-gray">
+              +996777777777
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="widget dark">
+            <h5 class="widget-title mb-10">Связаться с нами.</h5>
+            <ul class="styled-icons icon-bordered icon-sm">
+              <li><a href="https://www.facebook.com/skillboxru/"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/Skillbox_ru"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UC2FJq-Rr7v4SlKAoM7x0ZhA"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="https://instagram.com/skillbox.ru?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://pin.it/1HwmEw7"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+            </form>
+            <!-- Mailchimp Subscription Form Validation-->
+            <script type="text/javascript">
+              $('#mailchimp-subscription-form-footer').ajaxChimp({
+                  callback: mailChimpCallBack,
+                  url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+              });
+
+              function mailChimpCallBack(resp) {
+                  // Hide any previous response text
+                  var $mailchimpform = $('#mailchimp-subscription-form-footer'),
+                      $response = '';
+                  $mailchimpform.children(".alert").remove();
+                  if (resp.result === 'success') {
+                      $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                  } else if (resp.result === 'error') {
+                      $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                  }
+                  $mailchimpform.prepend($response);
+              }
+            </script>
+            <!-- Mailchimp Subscription Form Ends Here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom bg-black-333">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="font-11 text-black-777 m-0">Copyright &copy;2016 ThemeMascot. All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5 font-12">
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Help Desk</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper -->
+
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="{% static 'js/custom.js'%}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+      (Load Extensions only on Local File Systems ! 
+       The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/revolution-slider/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+</body>
+</html>
