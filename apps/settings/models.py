@@ -1,5 +1,6 @@
 from django.db import models
 from apps.users.models import User
+from django import forms
 # Create your models here.
 class Setting(models.Model):
     title = models.CharField(

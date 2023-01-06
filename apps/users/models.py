@@ -1,6 +1,7 @@
 from tabnanny import verbose
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django import forms
 # Create your models here.
 class User(AbstractUser):
     phone = models.CharField(
@@ -21,3 +22,9 @@ class User(AbstractUser):
     )
     def __str__(self):
         return f"{self.username}"
+    
+
+class RequestForm(forms.Form):
+  name = forms.CharField(max_length=100)
+  email = forms.EmailField()
+  request = forms.CharField(widget=forms.Textarea)

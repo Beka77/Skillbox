@@ -190,7 +190,7 @@
             <form name="reg-form" class="register-form" enctype="multipart/form-data" method="POST">
               {% csrf_token  %}
               <div class="icon-box mb-0 p-0">
-                <a href="#" class="icon icon-bordered icon-rounded icon-sm pull-left mb-0 mr-10">
+                <a href="{% url 'register' %}" class="icon icon-bordered icon-rounded icon-sm pull-left mb-0 mr-10">
                   <i class="pe-7s-users"></i>
                 </a>
                 <h4 class="text-gray pt-10 mt-0 mb-30">Нет аккаунта? Зарегистрируйтесь сейчас.</h4>

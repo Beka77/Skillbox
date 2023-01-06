@@ -191,7 +191,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- Divider: Contact -->
     <section class="divider">
       <div class="container pt-0">
@@ -285,6 +285,12 @@
   </div>
   <!-- end main-content -->
   
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Отправить заявку">
+</form>
+
   <!-- Footer -->
   <footer id="footer" class="footer" data-bg-color="#1f1f1f">
     <div class="container pt-70 pb-40">

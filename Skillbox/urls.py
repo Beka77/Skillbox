@@ -15,28 +15,31 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import include,path
+from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
-from apps.settings.views import index, contact, news_detail,news_index, user_not_found, register_error
+from apps.settings.views import index, contact, news_detail, news_index
 from apps.courses.views import courses_detail
 from apps.users.views import account_update
 from django.conf import settings
 from django.contrib.auth.views import LogoutView
+from apps.settings.views import submit_request, success
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name = "index"),
-    path('account/update/<int:id>', account_update, name = "account_update"),
-    path('course/<int:id>', courses_detail, name = "courses_detail"),
+    path('', index, name="index"),
+    path('account/update/<int:id>', account_update, name="account_update"),
+    path('course/<int:id>', courses_detail, name="courses_detail"),
     path('contact/', contact, name="contact"),
-    path('news/<int:id>', news_detail, name = 'news_detail' ),
-    path('news/', news_index, name = "news_index"),
+    path('news/<int:id>', news_detail, name='news_detail'),
+    path('news/', news_index, name="news_index"),
     path('category/', include('apps.categories.urls')),
     path('users/', include('apps.users.urls')),
-    path('logout/', LogoutView.as_view(next_page = 'index'), name = "logout"),
+    path('logout/', LogoutView.as_view(next_page='index'), name="logout"),
     path('accounts/', include('allauth.urls')),
+    path('susubmit_request/', submit_request, name=submit_request),
+    path('success', success, name=success),
 ]
 
 
-urlpatterns +=  static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
